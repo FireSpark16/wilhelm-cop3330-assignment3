@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App {
+    String jsonString
+    TheStore myStore
+    gson.fromJson()
+    productSearch();
+    getItem();
+    displayInventory();
+    getFile();
+}
+class TheStore {
+    List<Map<String,Object>> products
+    (This stores all the data from the json file)
+}
+
+App <|-- TheStore
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App {
+    ArrayList<String> initialInput
+    ArrayList<Map<String,String>> data
+    output();
+}
+class ReadFile {
+    getInput();
+}
+class ParseData {
+    int length
+    HashMap<String, String> newMap
+    removeCommas();
+    waitUntilComma();
+}
+App <|-- ReadFile
+App <|-- ParseData
+@enduml

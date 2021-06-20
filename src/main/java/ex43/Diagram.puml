@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App {
+    String siteName
+    String author
+    boolean js
+    boolean css
+    getInput()
+    getInputTF()
+}
+class MakeFiles {
+    String path
+    generateFiles()
+    addPrefix()
+    makeFolder()
+    makePage()
+    addHead()
+}
+
+App <|-- MakeFiles
+
+@enduml

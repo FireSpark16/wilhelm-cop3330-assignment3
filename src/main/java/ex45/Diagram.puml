@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App {
+    String input
+    String replacedString
+    String newFileName
+    replaceInput();
+    getInput();
+    createOutputFile();
+}
+class ReadFile {
+    getInput();
+}
+
+App <|-- ReadFile
+
+@enduml

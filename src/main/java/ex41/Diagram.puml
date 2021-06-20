@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App {
+    String[][] people;
+    getLength();
+    output();
+}
+class ReadFile {
+    getPeople();
+}
+class Sorter {
+    sort();
+}
+App <|-- ReadFile
+App <|-- Sorter
+@enduml
